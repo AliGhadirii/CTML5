@@ -1,22 +1,26 @@
 #pragma once
 #include<string>
 #include<fstream>
+#include<iostream>
 using namespace std;
 class CTML
 {
 	fstream file;
 public:
 	CTML();
-	void creat_p(string a);
-	void creat_hr();
-	void creat_br();
-	void creat_font(string a);
-	void creat_h1(string a);
-	void creat_h2(string a);
-	void creat_h3(string a);
-	void creat_h4(string a);
-	void creat_h5(string a);
-	void creat_h6(string a);
+	string made_for_title();
+	void create_p(string a, string color);
+	void create_hr();
+	void create_br();
+	void create_font(string a, string color);
+	void create_h1(string a, string color);
+	void create_h2(string a, string color);
+	void create_h3(string a, string color);
+	void create_h4(string a, string color);
+	void create_h5(string a, string color);
+	void create_h6(string a, string color);
+	void create_title(string a);
+	void final_set();
 	~CTML();
 };
 
